@@ -1,0 +1,53 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.scene{
+    background: url(source/mainScene.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.container{
+    height:100%;width:100%;
+    position: fixed;
+    background: url(source/shade_2.png) no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+
+#caterpillar{
+    width:900px; 
+    height:300px; 
+    position: relative;
+    top: 1250px;  
+    left: 10%;  
+    right: 0;  
+    margin: 0;
+    z-index: 2;
+}
+
+#tutorial{
+    width:300px;
+    height:300px;
+    position:relative;
+    top:250px;
+    left:55%;
+    margin: 0;
+    z-index:4;
+}
+
+img {  
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: 0;
+}
