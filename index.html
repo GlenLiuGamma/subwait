@@ -3,15 +3,21 @@
 <head>
     <title>Subwait Demo</title>
     <link rel="stylesheet" href="render.css">
+    <script type="text/javascript" src="game.js"></script>
 </head>
 <body class = "scene">
-
 <div class = "container" id = "shade"></div>
+
 <div id = "caterpillar">
     <img src="source/caterpillar.png">
 </div>
-<div id = "tutorial">
-    <img src="source/tutorialBoard.png">
+<div id = "countdown">
+    <div id = "countNum"> 30 </div>
+    <img src="source/Countdown.png">
 </div>
+<div id = "tutorial">
+    <img src="source/tutorialBoard.png" onclick="GameStart()">
+</div>
+
 </body>
 </html>
