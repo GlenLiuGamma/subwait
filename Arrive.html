@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type = "text/css">
+#scene{
+    width: fit-content;
+    background: url(source/endScene.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+div{
+    animation: 3s myCustomAnimate
+}
+
+@keyframes myCustomAnimate{
+    0% {
+        transform: scale(0) rotate(0deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+</style>
+
+</head>
+<body id = "scene">
+</body>
+<script>
+    function px2int (a) {
+    return parseInt(a.replace('px', ''));
+    }
+
+    (function shaking () {
+        var ele = document.createElement("div");
+        ele.style.height = '860px';
+        ele.style.width = '993px';
+        ele.style.position = "absolute";
+        ele.style.left = '0px';
+        ele.style.top = "500px";
+        ele.style.backgroundRepeat = "no-repeat";
+        ele.style.backgroundImage = "url(source/Head.png)";
+        document.getElementById('scene').appendChild(ele);
+    }) ();
+</script>
+</html>

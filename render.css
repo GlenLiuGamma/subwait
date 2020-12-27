@@ -3,16 +3,18 @@ html, body{
     padding: 0;
 }
 
-.scene{
-    background: url(source/mainScene.png);
+#scene{
+    width: fit-content;
+    background: url(source/mainScene_test.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
 }
 
 .container{
-    height:100%;width:100%;
-    position: fixed;
+    height:1780px;
+    width:1000px;
+    position: absolute;
     background: url(source/shade_2.png) no-repeat;
     background-size: cover;
     z-index: 3;
@@ -21,8 +23,20 @@ html, body{
 #caterpillar{
     width:900px; 
     height:300px; 
-    position: relative;
+    overflow: hidden;
+    position: absolute;
     top: 1250px;  
+    left: 10%;  
+    right: 0;  
+    margin: 0;
+    z-index: 2;
+}
+
+#bloodbar{
+    width:900px; 
+    height:100px; 
+    position: absolute;
+    top: 1600px;  
     left: 10%;  
     right: 0;  
     margin: 0;
@@ -32,8 +46,8 @@ html, body{
 #tutorial{
     width:300px;
     height:300px;
-    position:relative;
-    top:250px;
+    position:absolute;
+    top:450px;
     left:55%;
     margin: 0;
     z-index:4;
@@ -51,7 +65,7 @@ html, body{
 #countNum{
    font-size: 2cm;
    top:5%;
-   left:30%;
+   left:15%;
    position:relative; 
    color: red; 
    font-weight:bold;
@@ -61,9 +75,8 @@ html, body{
 img {  
     max-height: 100%;  
     max-width: 100%; 
-    width: auto;
-    height: auto;
-    position: absolute;  
+    position: absolute; 
+    overflow: hidden; 
     top: 0;  
     bottom: 0;  
     left: 0;  

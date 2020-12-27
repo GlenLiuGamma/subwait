@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html onclick="TapScreen()">
 <head>
     <title>Subwait Demo</title>
     <link rel="stylesheet" href="render.css">
     <script type="text/javascript" src="game.js"></script>
 </head>
-<body class = "scene" onclick="TapScreen()">
+<body id = "scene">
 <div class = "container" id = "shade"></div>
 
 <div id = "caterpillar">
-    <img src="source/caterpillar.png">
+<img src="source/caterpillar.png">
 </div>
+
 <div id = "countdown">
-    <div id = "countNum"> 30 </div>
+    <div id = "countNum"> 00:30 </div>
     <img src="source/Countdown.png">
+</div>
+<div id = "bloodbar">
+    <img id = "blood_contain" src="source/bloodbar0.png">
 </div>
 <div id = "tutorial">
     <img src="source/tutorialBoard.png" onclick="GameStart()">
 </div>
-
 </body>
 </html>
